@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 function QuemSou() {
+  useEffect(() => { document.title = 'Quem sou - Prof. Isabel Silva | Explicações de Matemática Online' }, [])
   return (
     <section className="page quem-sou">
       <h2>Quem sou</h2>

@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+
 function Precos() {
+  useEffect(() => { document.title = 'Preços - Prof. Isabel Silva | Explicações de Matemática Online' }, [])
   return (
     <section className="page precos">
       <h2>Preços e Informações</h2>

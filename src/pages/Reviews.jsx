@@ -1,8 +1,11 @@
+import { useEffect } from 'react'
+
 const reviews = [
   // { name: 'Nome', text: 'Texto da review', rating: 5 },
 ]
 
 function Reviews() {
+  useEffect(() => { document.title = 'Reviews - Prof. Isabel Silva | Explicações de Matemática Online' }, [])
   return (
     <section className="page reviews">
       <h2>Reviews</h2>

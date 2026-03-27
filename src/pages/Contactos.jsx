@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const vagas = [
   { ano: '5.º ano', disponivel: true },
@@ -12,6 +12,7 @@ const vagas = [
 ]
 
 function Contactos() {
+  useEffect(() => { document.title = 'Contactos - Prof. Isabel Silva | Explicações de Matemática Online' }, [])
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)
 
