@@ -1,0 +1,29 @@
+const reviews = [
+  // { name: 'Nome', text: 'Texto da review', rating: 5 },
+]
+
+function Reviews() {
+  return (
+    <section className="page reviews">
+      <h2>Reviews</h2>
+      {reviews.length === 0 ? (
+        <p>De momento não há reviews. Volte mais tarde!</p>
+      ) : (
+      <div className="reviews-list">
+        {reviews.map((review, index) => (
+          <div className="review-card" key={index}>
+            <div className="review-stars">
+              {'★'.repeat(review.rating)}
+              {'☆'.repeat(5 - review.rating)}
+            </div>
+            <p className="review-text">&ldquo;{review.text}&rdquo;</p>
+            <p className="review-author">&mdash; {review.name}</p>
+          </div>
+        ))}
+      </div>
+      )}
+    </section>
+  )
+}
+
+export default Reviews
