@@ -1,7 +1,11 @@
 import { useEffect } from 'react'
 
 const reviews = [
-  // { name: 'Nome', text: 'Texto da review', rating: 5 },
+  {
+    name: 'Patrícia',
+    text: 'A Isabel é fantástica e tem sido uma mais valia nas notas da minha filha, a Sofia tem explicação desde do ano passado e cada vez está melhor a matemática e aprendeu a gostar cada vez mais da disciplina.',
+    rating: 5,
+  },
 ]
 
 function Reviews() {
